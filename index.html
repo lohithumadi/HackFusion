@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="prototype.css"> <!-- Link to the CSS file if separate -->
+</head>
+<body>
+
+<!-- Main Container -->
+<div class="auth-container">
+    <h2>Login</h2>
+    
+    <!-- Login Form -->
+    <form id="loginForm">
+        <label for="loginUsername">Username</label>
+        <input type="text" id="loginUsername" name="loginUsername" placeholder="Enter username" required>
+        
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter password" required>
+        
+        <button type="submit">Login</button>
+        
+        <p id="loginError" class="error-message"></p>
+
+        <p>Don't have an account? <a href="#" id="showSignUp">Sign Up</a></p>
+    </form>
+</div>
+
+<!-- Create Account Modal -->
+<div id="createAccountModal" class="popup">
+    <div class="popup-content">
+        <h2>Create Account</h2>
+        
+        <!-- Create Account Form -->
+        <form id="createAccountForm">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Choose a password" required>
+            
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+            
+            <button type="submit">Create Account</button>
+            
+            <p id="error-message" class="error-message"></p>
+            <p>Already have an account? <a href="#" id="closeCreateAccountModal">Sign In</a></p>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script> <!-- Link to the JavaScript file if separate -->
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        window.location.href = "final 1.html";
+    });
+</script>
+</body>
+</html>
+
