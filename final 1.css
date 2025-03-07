@@ -1,0 +1,255 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #0a192f;
+    color: #ccd6f6;
+    padding: 20px;
+    font-family: "Open Sans", sans-serif; /* Added Open Sans as fallback */
+}
+
+/* Header */
+header {
+    background-color: #112240;
+    color: #64ffda;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ccd6f6;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #64ffda;
+}
+
+/* Sections */
+section {
+    background-color: #112240;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    max-width: 700px;
+}
+
+h2 {
+    color: #64ffda;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    background-color: #0a192f;
+    color: #ccd6f6;
+    
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #64ffda;
+    background-color: #112240;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: #64ffda;
+    color: #112240;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #52e3c2;
+    transform: scale(1.05);
+}
+
+/* Chat Box */
+#chat-container {
+    border: 1px solid #64ffda;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #112240;
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+#chat-box {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #0a192f;
+    border-radius: 8px;
+    border: 1px solid #64ffda;
+}
+
+#chat-box .user-message {
+    background-color: #64ffda;
+    color: #112240;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#chat-box .bot-message {
+    background-color: #223a5e;
+    color: #ccd6f6;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    section {
+        max-width: 100%;
+    }
+}
+
+/* Additional Chat Styles */
+#chat-window {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #674188;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+#chat-messages {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #674188;
+    height: calc(100vh - 200px);
+    max-height: calc(100vh - 200px);
+    overflow: auto;
+}
+
+#chat-form {
+    display: flex;
+    align-items: center;
+}
+
+#chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #674188;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #64ffda;
+    color: #112240;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.bot-message {
+    font-family: "Roboto", sans-serif;
+    background-color: #223a5e; /* different light color */
+    color:#ccc
+    text-align: justify; /* keep it right-aligned */
+    padding: 15px; /* added padding */
+    margin-top: 10px; /* added margin-top to create a gap */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+}
+
+.user-message {
+    font-family: "Nunito", sans-serif;
+    background-color: #223a5e; /* light color */
+    color: #ccc;
+    text-align: left; /* changed text align to left */
+    padding: 15px; /* added padding */
+    display: flex;
+    align-items: center;
+    font-style: italic;
+}
+
+.user-message img,
+.bot-message img {
+    width: 40px; /* adjust the width of the icon */
+    height: 40px; /* adjust the height of the icon */
+    margin-right: 20px; /* add some margin to separate the icon from the message */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 400px) {
+    #chat-window {
+        width: 90%;
+    }
+}
+
+.main-title {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-bottom: 0.5rem;
+    color: #fffbf5;
+    font-style: italic;
+}

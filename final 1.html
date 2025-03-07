@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDISYNC</title>
+    <link rel="stylesheet" href="final 1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>MediSync! - AI Health & Fitness Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="#symptom-checker">Symptom Checker</a></li>
+                <li><a href="#diet-recommendation">Diet Recommendation</a></li>
+                <li><a href="#first-aid">First Aid Guidance</a></li>
+                <li><a href="#health-recorder">Health Recorder</a></li>
+                <li><a href="#fitness-tracker">Fitness Tracker</a></li>
+                <li><a href="#mental-health">Mental Health Tracker</a></li>
+                <li><a href="#medication-reminder">Medication Reminder</a></li>
+                <li><a href="#chatbot">AI Chatbot</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Symptom Checker -->
+        <section id="symptom-checker">
+            <h2>🩺 Symptom Checker</h2>
+            <form id="symptom-form">
+                <label>Enter your symptoms:</label>
+                <input type="text" id="symptoms" placeholder="e.g., headache, fever" required>
+                <button type="submit">Remedies</button>
+            </form>
+            <div id="symptom-result"></div>
+        </section>
+
+        <!-- Diet Recommendation -->
+        <section id="diet-recommendation">
+            <h2>🍎 Diet Recommendation</h2>
+            <form id="diet-form">
+                <label>Select your condition:</label>
+                <select id="diet-options">
+                    <option value="fever">Fever</option>
+                    <option value="cough">Cough</option>
+                    <option value="headache">Headache</option>
+                    <option value="stomach_pain">Stomach Pain</option>
+                    <option value="fatigue">Fatigue</option>
+                </select>
+                <button type="submit">Get Diet Plan</button>
+            </form>
+            <div id="diet-result"></div>
+        </section>
+
+        <!-- First Aid Guidance -->
+        <section id="first-aid">
+            <h2>🚑 First Aid Guidance</h2>
+            <label>Select a First Aid Topic:</label>
+            <select id="first-aid-options">
+                <option value="burn">🔥 Burns</option>
+                <option value="cut">🩹 Cuts & Wounds</option>
+                <option value="choking">🤧 Choking</option>
+                <option value="fracture">🦴 Fractures</option>
+                <option value="nosebleed">👃 Nosebleeds</option>
+            </select>
+            <button id="get-first-aid">Get First Aid Tips</button>
+            <div id="first-aid-info"></div>
+        </section>
+
+        <!-- Health Recorder -->
+        <section id="health-recorder">
+            <h2>📋 Health Recorder</h2>
+            <form id="health-form">
+                <label>Name:</label>
+                <input type="text" id="name" required>
+                <label>Weight (kg):</label>
+                <input type="number" id="weight" required>
+                <label>Blood Pressure:</label>
+                <input type="text" id="bp" required>
+                <button type="submit">Save Record</button>
+            </form>
+            <div id="health-record"></div>
+        </section>
+
+        <!-- Fitness Tracker -->
+        <section id="fitness-tracker">
+            <h2>🏃‍♂️ Fitness Tracker</h2>
+            <form id="fitness-form">
+                <label>Steps Walked:</label>
+                <input type="number" id="steps" required>
+                <label>Calories Burned:</label>
+                <input type="number" id="calories" required>
+                <button type="submit">Track Progress</button>
+            </form>
+            <div id="fitness-status"></div>
+        </section>
+
+        <!-- Mental Health Tracker -->
+        <section id="mental-health">
+            <h2>🧘 Mental Health Tracker</h2>
+            <label>How do you feel today?</label>
+            <select id="mood">
+                <option value="Happy">😊 Happy</option>
+                <option value="Stressed">😟 Stressed</option>
+                <option value="Anxious">😰 Anxious</option>
+                <option value="Depressed">😔 Depressed</option>
+                <option value="Neutral">😐 Neutral</option>
+            </select>
+            <button id="check-mood">Get Advice</button>
+            <div id="mood-advice"></div>
+        </section>
+
+        <!-- Medication Reminder -->
+        <section id="medication-reminder">
+            <h2>💊 Medication Reminder</h2>
+            <form id="medication-form">
+                <label>Medication Name:</label>
+                <input type="text" id="medication-name" required>
+                <label>Time to Take:</label>
+                <input type="time" id="medication-time" required>
+                <button type="submit">Set Reminder</button>
+            </form>
+            <div id="reminder-status"></div>
+        </section>
+
+        <!-- AI Chatbot -->
+        <section id="chatbot">
+            <h2>🤖 AI Health Assistant</h2>
+   <div class="chat-container">
+        <div class="chat-header">
+            <h1>Gemini Chatbot</h1>
+        </div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-input-container">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    <script src="final 1.js"></script>
+
+
+  </section>
+  </main>
+ </body>
+</html>

@@ -1,0 +1,142 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Beautiful gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Container */
+.auth-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    font-size: 28px;
+    color: #6a11cb;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+/* Input Focus Effect */
+input:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6a11cb;
+}
+
+/* Error Messages */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+/* Link Styling */
+a {
+    color: #2575fc;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6a11cb;
+}
+
+/* Popup Modal (Create Account) */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Close Button */
+.popup button {
+    background-color: #6a11cb;
+    border: none;
+    padding: 12px 24px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.popup button:hover {
+    background-color: #2575fc;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .auth-container, .popup-content {
+        width: 90%;
+        padding: 20px;
+    }
+}
